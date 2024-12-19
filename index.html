@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+     body {
+            padding: 20px;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            font-family: 'Comic Neue', cursive, sans-serif; /* Mudado para Comic Neue */
+        }
+        .produto-img { 
+            width: 50px; 
+            height: 50px; 
+            object-fit: cover; 
+        }
+        .list-group-item {
+            background-color: #ffffff; /* Itens da lista em cinza claro */
+            color: rgb(0, 0, 0); /* Texto em preto nos itens da lista */
+        }
+        .list-group-item:hover {
+            background-color: #cccbcb; /* Cor ao passar o mouse */
+        }
+        .btn-custom {
+            border: 1px solid black; /* Borda preta */
+            background-color: rgb(255, 255, 255); /* Fundo branco */
+            color: rgb(0, 0, 0); /* Texto preto */
+        }
+        .btn-custom:hover {
+            background-color: #aca5a5; /* Cor de fundo ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Lista de Compras</h1>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="produto" placeholder="Digite um produto">
+            <input type="text" class="form-control" id="descricao" placeholder="Digite uma descrição">
+            <input type="text" class="form-control" id="imagem-url" placeholder="URL da imagem">
+            <div class="input-group-append">
+                <button class="btn btn-primary" id="adicionar">Adicionar</button>
+            </div>
+        </div>
+        <button class="btn btn-danger mb-3" id="reiniciar-lista">Reiniciar Lista</button>
+        <ul class="list-group" id="lista-produtos"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
